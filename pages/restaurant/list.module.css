@@ -1,0 +1,256 @@
+.jill_h1 {
+  font-size: var(--h1fs36);
+  font-weight: var(--fwbold);
+  padding-bottom: var(--p32);
+  color: #fff;
+}
+
+.search {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search_bar {
+  position: absolute;
+  top: 60%;
+}
+.banner {
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-image: url('../../public/rest_image/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+
+.jill_h2 {
+  font-size: var(--h3fs28);
+  font-weight: var(--fwbold);
+  padding-bottom: var(--p16);
+}
+.second_area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bread_btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--p16);
+  padding-bottom: 16px;
+}
+.filter {
+  border-radius: 8px;
+  padding: 12px 20px;
+}
+
+.filter_box {
+  padding-bottom: 40px;
+}
+.line {
+  border-bottom: 1px solid var(--gray);
+  opacity: 0.5;
+  margin-top: 1px;
+}
+.filter_btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 70px;
+  height: 50px;
+}
+.filter_btns > button {
+  margin-right: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 100%;
+  text-align: center;
+}
+.filter_btns > button:last-child {
+  margin-right: 0;
+}
+.card {
+  position: relative;
+  width: 100%;
+}
+.function_group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.function_group > * {
+  margin-right: 16px;
+}
+
+.function_group > *:last-child {
+  margin-right: 0;
+}
+
+.bgc {
+  background-color: var(--lightBrown);
+}
+.pagination {
+  margin: 70px 0;
+  text-align: center;
+}
+
+/* 地區樣式 */
+.location_search_area {
+  margin: 48px 12px 48px 0px;
+  display: flex;
+}
+
+.location_search_area > div > p {
+  font-size: var(--h6fs18);
+}
+.category_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.labels {
+  font-size: var(--h6fs18);
+  font-weight: var(--fwbold);
+  height: 100%;
+  line-height: 50px;
+  width: 110px;
+  margin-right: 16px;
+}
+
+.paw {
+  font-size: var(--h6fs18);
+  color: var(--dark);
+  margin-right: 10px;
+}
+.dropdowns{
+  display: flex;
+  gap: 16px;
+}
+.city {
+  width: 200px;
+}
+.dropdown_arrow {
+  margin-right: 100px;
+}
+.section {
+  width: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .jill_h1 {
+    font-size: var(--h5fs20);
+    padding-bottom: var(--p16);
+  }
+  .banner {
+    height: 220px;
+  }
+  .jill_h2 {
+    font-size: var(--h6fs18);
+    padding-bottom: var(--p8);
+  }
+  .second_area {
+    margin: 0;
+  }
+  .function_group {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: var(--p8);
+    padding-top: var(--p8);
+  }
+  .filter {
+    padding: var(--p8) 12px;
+  }
+  .filter_box {
+    padding-bottom: 50px;
+    margin-top: 40px;
+  }
+  .labels {
+    width: 100%;
+    text-align-last: auto;
+    height: auto;
+    line-height: 1.1;
+  }
+  .filter {
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 16px;
+  }
+  .filter_btns {
+    margin-top: 60px;
+  }
+
+  .filter_btns > button {
+    margin-right: 16px;
+    padding-top: 0;
+    width: 100%;
+    padding-bottom: 0;
+    line-height: 100%;
+    text-align: center;
+  }
+  .bread_btn {
+    justify-content: space-between;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .function_group {
+    width: 100%;
+  }
+  .function_group > * {
+    margin-right: 0px;
+  }
+  .breadcrumb {
+    display: none;
+  }
+  .category_area {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+  .location_img {
+    height: 88px;
+    width: 88px;
+    margin-bottom: 6px;
+  }
+  .city {
+    margin-bottom: 6px;
+    width: 100%;
+    margin-right:0 ;
+  }
+  .section {
+    width: 100%;
+  }
+  .location_search_area {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .location_name {
+    font-size: var(--pfs12);
+  }
+
+  .dropdown_arrow {
+    margin-right: 70px;
+  }
+  .pagination {
+    padding-bottom: 60px;
+    margin-top: 20px;
+  }
+}

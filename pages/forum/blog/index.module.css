@@ -1,0 +1,52 @@
+.body{
+    width:100%;
+    /* background-color: #FFFAF6; */
+    padding: 0;
+    margin: 0;
+    margin-bottom: 100px;
+
+}
+.blogContent{
+    width:85%;
+    background-color: #fff;
+    height:100%;
+    position: relative;
+    margin-bottom: 100px;
+}
+.antRow{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+.editBg{
+    width: 80px;
+    height: 80px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px; /* 距離底部的距離 */
+    right: 20px;
+}
+.editIcon{
+    width:40px;
+    height:40px;
+    color:#fff;
+}
+.postContent{
+    margin:10px
+}
+.pagination{
+    margin:70px 0;
+    text-align: center;
+  }
+
+.container-outer{
+    margin-bottom: 100px;
+}
+
+.containerOuter {
+    position: relative;
+    min-height: 100vh; /* 確保頁面高度至少與視窗高度一樣 */
+    margin: 0;
+    padding: 0;
+  }

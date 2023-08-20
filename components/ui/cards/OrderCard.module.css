@@ -1,0 +1,148 @@
+.orderCardContent{
+  background-color: #fff;
+  border-radius: var(--br20);
+  padding: var(--p24);
+  box-shadow: var(--shadow);
+	margin-bottom: 40px;
+}
+
+.orderSid,.itemContent,.items,.statusIcon{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: var(--p8) 0;
+}
+
+.singleIcon{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: var(--p8) 0;
+}
+
+.orderExpire{
+  color: var(--heartRed);
+  height: 22px;
+  align-items: center;
+}
+
+.orderSid{
+  border-bottom: 1px solid var(--gray);
+}
+
+.itemContent{
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.itemInfo p{
+  color: var(--gray);
+  font-size: var(--pfs14);
+  padding: 2px 0;
+}
+
+.itemNum{
+  background-color: var(--light1);
+  padding: var(--p16); 
+  border-radius: var(--br8);
+}
+
+.price{
+  color: var(--main);
+  font-size: var(--h3fs28);
+  font-weight: var(--fwbold);
+}
+
+.sidTitle{
+  color: var(--dark);
+  font-weight: var(--fwbold);
+}
+
+.orderStatus{
+  display: flex;
+  height: 22px;
+  align-items: center;
+}
+
+.text{
+  margin-left: 5px;
+  font-size: var(--pfs16);
+}
+
+.items{
+  height: 100%;
+  align-items: center;
+}
+
+.btn,.totalPrice{
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--p8) 0; 
+}
+
+.totalPrice{
+  margin: 20px 0 0 0;
+  align-items: center;
+}
+
+.icons{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.iconBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div{
+  height: 30px;
+}
+
+.statusTitle{
+  font-size: var(--pfs14);
+  padding: var(--p8) 0;
+}
+
+.statusTime{
+  font-size: 8px;
+}
+
+.img{
+	width: 80px;
+	margin-right: 10px;
+}
+
+.getty{
+  margin-right: 3px;
+}
+
+.actAddress{
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width:1440px){
+	.icons{
+			display: none;
+	}
+
+	.statusIcon{
+		justify-content: flex-end;
+	}
+
+	.itemContent{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+  .totalPrice{
+    justify-content: flex-start;
+  }
+
+  .btn{
+    position: absolute;
+  }
+	} 

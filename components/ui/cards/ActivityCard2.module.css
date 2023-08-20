@@ -1,0 +1,81 @@
+.card {
+  width: 30%;
+  height: 323px;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--br10);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image_gradient{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 100%);
+z-index: 3;
+}
+
+.content {
+  position: absolute;
+  top: 220px;
+  left: 0;
+  right: 0;
+  padding: var(--p32);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.city {
+  font-size: var(--h1fs36);
+  color: white;
+  text-decoration: none;
+}
+
+
+.btnContainer {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .btnContainer {
+  opacity: 1;
+}
+
+.btn {
+  width: 104px;
+  height: 51px;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.btnText {
+  font-size: var(--pfs16);
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+.feature {
+  font-size: var(--pfs16);
+  background-color: var(--secondary);
+  padding: var(--p16) 5px;
+  border-radius: var(--br8);
+  display: inline-block;
+  text-align: center;
+  width: 23%;
+  line-height: 25px;
+}

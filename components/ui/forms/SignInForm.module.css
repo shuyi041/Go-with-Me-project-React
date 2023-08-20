@@ -1,0 +1,65 @@
+
+.loginForm{
+  width: 80%;
+  /* background-color: lightblue; */
+  margin: 50px auto;
+
+}
+
+
+
+.line{
+  position: relative;
+  width: 80%;
+  height: 1px;
+  background-color: var(--light-gray);
+  margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.lineText{
+  position: absolute;
+  font-size: var(--pfs14);
+  text-align: center;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+}
+
+.btnsContain{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: pink; */
+  margin-bottom: 50px;
+}
+
+.forgetPwd{
+  text-decoration: none;
+}
+
+.forgetPwd:hover{
+  color: #1f9ec5be;
+}
+
+.btns{
+  display: flex;
+}
+
+.btn{
+  margin-right: 10px;
+}
+
+.google{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media screen and (max-width:767px){
+  .lineText{
+    font-size: var(--pfs12);
+  }
+}

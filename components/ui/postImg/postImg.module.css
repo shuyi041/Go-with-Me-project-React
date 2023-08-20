@@ -1,0 +1,17 @@
+.imgPic{
+    width:250px;
+    height:200px;
+    border-radius:var(--br10);
+    object-fit: cover;
+    margin:10px;
+}
+.img{
+    object-fit: cover;
+    object-position: center center;
+    width:100%;
+}
+.carousel{
+    width:1000px;
+    /* margin-left:40px; */
+    padding-top:40px;
+}

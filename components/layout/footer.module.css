@@ -1,0 +1,116 @@
+.footer{
+  position: absolute;
+	bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+}
+
+/* 根據classTitle傳入參數決定rwd順序 */
+.bigNone{
+  display: none;
+}
+
+.smNone{
+  display: block;
+}
+.footerbg{
+
+  position:absolute;
+  top:0;
+}
+.footerInfo{
+  transform: translateY(15px);
+  padding: 0 10px;
+  width: 1280px;
+  z-index: 1;
+}
+.homeFooterInfo{
+  transform: translateY(15px);
+  width: 85%;
+  z-index: 1;
+  padding: 0 10px;
+}
+
+.logoInfo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+.logo{
+  transform: translateY(10px);
+  width: 100px;
+  cursor: pointer;
+}
+
+.linkMenu{
+  display: flex;
+  width: 300px;
+}
+
+.linkItem {
+  width: 25%;
+  height: 35px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.linkMenu a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  color: var(--dark);
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.copyRight{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.copyRight p{
+  margin: 0;
+  color: #7A7A7A;
+}
+
+
+@media only screen and (max-width: 767px){
+  .footer{
+    height: 100px;
+  }
+
+  .bigNone{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    justify-content: center;
+  }
+
+  .smallNone{
+    display: none;
+  }
+
+  .footerInfo{
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .linkItem {
+    font-size: var(--pfs12);
+  }
+
+  .logo{
+    width: 50px;
+    transform: translateY(8px);
+  }
+
+  .copyRight p{
+    font-size: 5px;;
+  }
+}

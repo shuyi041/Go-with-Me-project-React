@@ -1,0 +1,69 @@
+.body{
+    width:100%;
+    /* background-color: #FFFAF6; */
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.blogContent{
+    width:85%;
+    background-color: #fff;
+    height:100%;
+    position: relative;
+}
+.antRow{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+.postContent{
+    margin:10px
+}
+.postNav{
+    background-color: #FFEFE8;
+    height:60px;
+    width:100%;
+    display: flex;
+    align-content: center;
+    position: relative;
+}
+.postNavText{
+    font-size: var(--h3fs28);
+    font-weight: bold;
+    padding-left:20px;
+    padding-top: 20px;
+    width:80%;
+}
+.list{
+    margin-top: 5px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.containerOuter {
+    position: relative;
+    min-height: 100vh; /* 確保頁面高度至少與視窗高度一樣 */
+    margin: 0;
+    padding: 0;
+  }
+  .editBg{
+    width: 80px;
+    height: 80px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px; /* 距離底部的距離 */
+    right: 60px;
+}
+.editIcon{
+    width:40px;
+    height:40px;
+    color:#fff;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.postNav{
+    border-radius: 10px 10px 0 0;
+}

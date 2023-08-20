@@ -1,0 +1,130 @@
+.card {
+  display: flex;
+  width: 95%;
+  height: 290px;
+}
+
+/* -------左邊------- */
+.left {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  border-radius: var(--br10);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 40px;
+  background-color: var(--main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:var(--br10) 0 var(--br8) 0 ;
+}
+
+.text {
+  font-size: var(--pfs16);
+  color: white;
+}
+
+.heart_icon {
+  position: absolute;
+  bottom: 15px;
+  right: 365px; 
+  z-index: 9;
+  font-size: 30px;
+  cursor: pointer;
+  color:var(--light-gray);
+
+}
+
+.heart_icon_liked{
+  position: absolute;
+  bottom: 15px;
+  right: 365px; 
+  z-index: 9;
+  font-size: 30px;
+  cursor: pointer;
+  color:var(--heartRed);
+}
+
+.heart_icon:hover{
+  color:var(--heartRed)
+}
+
+
+/* -------右邊------- */
+.right {
+  width: 50%;
+  margin-left: 1.5rem; /*左右間距*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+/* 標題 */
+.rowTextTitle {
+  font-weight: var(--fwbold);
+  margin-right: 8px;
+}
+
+.review{
+  display: flex;
+}
+
+.star_icon{
+  margin-right: 5px;
+  color: var(--starYellow);
+  font-size: var(--h6fs18);
+}
+
+/* 地址 */
+/* .rowTextAddress {
+  color: var(--gray);
+} */
+
+.rowTextLarge {
+  color: var(--dark);
+  font-size: var(--h5fs20);
+}
+
+.pText{
+  font-size: var(--h6fs18);
+}
+
+.row_icon {
+  margin-right:8px;
+  font-size: var(--h6fs18);
+  color: var(--main);
+}
+
+.feature {
+  width: 130px;
+  height: 40px;
+  background-color: #FFD4C0;
+  color: #515151;
+  margin-right: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--pfs16);
+}
+
+.row_price{
+  font-size: var(--pfs16);
+  color: var(--dark);
+}
+

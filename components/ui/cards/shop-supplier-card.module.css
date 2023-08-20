@@ -1,0 +1,71 @@
+.card{
+    display:flex;   
+    text-align: center;
+    cursor: pointer;
+}
+
+.shed_box{
+    padding:0 var(--p16);
+    width: 100%;
+    position:absolute;
+    top:0px;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    object-fit: fill;
+}
+
+
+.shed{ 
+    height: 100%;
+    width: 100%;   
+}
+.normal_card:hover{
+    box-shadow:  2px 6px 8px rgba(0, 0, 0, 0.1);
+    color:var(--main)
+}
+
+.normal_card{
+    background-color: white;
+    overflow: hidden;
+    border-radius: var(--br10);
+    border:1px solid var(--dark);
+    width:100%;
+    padding:var(--p16) var(--p16);
+    flex:1;
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand_img{
+    width: 60%;
+    max-width: 150px;
+    margin: var(--p8);
+}
+
+
+.card_title{
+    font-size: var(--h6fs18);
+    font-weight: var(--fwbold);
+    text-align: center;
+    line-height: 1.1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    padding-bottom:2px ;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width:767px){
+    .normal_card{
+        width: 700px;
+    }
+    .card_title{
+        font-size: var(--pfs16);
+    }
+}
+

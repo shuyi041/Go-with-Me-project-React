@@ -1,0 +1,116 @@
+.card{
+    /* width: 400px; */
+    width: 100%;
+    border-radius: 8px;
+    margin: 0;
+    margin-bottom: 40px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    position: relative; 
+    overflow: hidden;
+}
+.rest_title{
+    display: flex;
+    margin-top: 8px;
+    align-items: center; 
+    justify-content: space-between; 
+}
+.rest_img{
+    /* width: 400px; */
+    width: 100%;
+    height: 240px;
+    padding-bottom: 64%; 
+    /* background-color: bisque; */
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative; 
+}
+.rest_img>img {
+    width: 100%; 
+    transition: 0.5s;
+    height: 280px;
+    object-fit: cover;
+    object-position: top center;
+  }
+.rest_img img:hover {
+    scale: 1.1;
+  }
+.rating {
+    margin: 10px 0;
+    border: 1px solid #515151;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.rest_name{
+    margin-top: var(--p16);
+    margin-bottom: 10px;
+    font-size: var(--h5fs20);
+    font-weight: var(--fwbold);
+}
+.rest_location{
+    font-size: var(--pfs16);
+    color: #909090;
+}
+.hash_tag_group{
+    margin-top: 16px;
+}
+
+.icon_heart{
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    font-size: 30px;
+    color: var(--light-gray);
+    z-index: 1;
+    cursor: pointer;
+}
+.active{
+    color:var(--heartRed);
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    font-size: 30px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px){
+    .rest_name{
+        margin: 8px 0;
+        font-size: var(--pfs14);
+    }
+    .rest_title{
+        margin-top: 8px;
+        flex-wrap: wrap;
+    }
+    .rest_location{
+        font-size: 14px;
+        padding-bottom: 6px;
+        width: 100%;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    .rest_img{
+        border-radius: 6px;
+        height: 100px;
+    }
+    .hash_tag_group{
+        margin-top: 8px;
+    }
+    .icon_heart{
+        top: 8px;
+        right: 16px;
+        font-size: var(--h6fs18);
+    }
+    .hash_tag_group{
+        display: none;
+    }
+    .rest_img>img {
+        height: 120px;
+      }
+    }
